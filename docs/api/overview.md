@@ -1,6 +1,6 @@
 # API Overview
 
-Our API is REST-based and uses JSON for requests and responses.
+Our API is REST-based and uses JSON for both requests and responses.
 
 ## Base URL
 
