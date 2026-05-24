@@ -21,3 +21,25 @@ See [docs/auth/tokens.md](../auth/tokens.md) for token generation.
 ## Versioning
 
 API version is in the URL path. Current version: `v1`.
+
+## Error responses
+
+All error responses follow this format:
+
+```json
+{
+  "error": {
+    "code": "invalid_request",
+    "message": "The 'limit' parameter must be between 1 and 100",
+    "param": "limit"
+  }
+}
+```
+
+Common error codes:
+
+- `invalid_request` — malformed request
+- `unauthorized` — missing or invalid token
+- `forbidden` — token does not have required scope
+- `not_found` — resource does not exist
+- `rate_limited` — request rate exceeded
