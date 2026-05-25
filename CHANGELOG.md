@@ -12,4 +12,4 @@
 
 ### Added
 
-- Error response documentation  4545ww
+- Error response documentation  454dd5ww
